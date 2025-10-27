@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="63" id="KGk-i7-Jjw" customClass="MessageCell" customModule="ChatMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsg-y4-bXR">
+                        <rect key="frame" x="63" y="8" width="258" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65l-gK-s7g">
+                                <rect key="frame" x="3" y="11" width="260" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48344396109999999" green="1" blue="0.77873335440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="65l-gK-s7g" secondAttribute="trailing" constant="-5" id="4ne-pQ-7i2"/>
+                            <constraint firstItem="65l-gK-s7g" firstAttribute="centerY" secondItem="jsg-y4-bXR" secondAttribute="centerY" id="JPO-Vg-QPr"/>
+                            <constraint firstItem="65l-gK-s7g" firstAttribute="leading" secondItem="jsg-y4-bXR" secondAttribute="leading" constant="3" id="c2n-PO-xmA"/>
+                            <constraint firstItem="65l-gK-s7g" firstAttribute="top" secondItem="jsg-y4-bXR" secondAttribute="top" constant="11" id="g7B-2Z-2WZ"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" id="Xs1-KF-MKl">
+                        <rect key="frame" x="6" y="9" width="45" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" id="nHp-dC-o2i">
+                        <rect key="frame" x="337" y="8" width="45" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jsg-y4-bXR" secondAttribute="bottom" constant="5" id="5Xv-ZE-nMX"/>
+                    <constraint firstItem="jsg-y4-bXR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="A8w-P1-A1H"/>
+                    <constraint firstItem="jsg-y4-bXR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="43" id="Khs-Sr-0BD"/>
+                    <constraint firstItem="nHp-dC-o2i" firstAttribute="leading" secondItem="jsg-y4-bXR" secondAttribute="trailing" constant="16" id="su0-iv-Dm3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="65l-gK-s7g" id="aPR-Eb-mkb"/>
+                <outlet property="leftImageView" destination="Xs1-KF-MKl" id="MZG-r7-roz"/>
+                <outlet property="messageBubble" destination="jsg-y4-bXR" id="5Pc-tL-Xv3"/>
+                <outlet property="rightImageView" destination="nHp-dC-o2i" id="Ysi-gK-L5c"/>
+            </connections>
+            <point key="canvasLocation" x="76.33587786259541" y="58.098591549295776"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="800" height="800"/>
+        <image name="12" width="2048" height="2048"/>
+    </resources>
+</document>
